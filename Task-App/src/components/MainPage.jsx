@@ -2,6 +2,7 @@ import React from 'react'
 import Data from '../data/cardData'
 import TaskCard from './TaskCard'
 import Header from './Header'
+import AddTask from './AddTask'
 
 const MainPage = () => {
   return (
@@ -10,7 +11,7 @@ const MainPage = () => {
       <div>
         <Header />
       </div>
-
+        <AddTask/>
       <div className="flex flex-wrap justify-center mx-[64px] pt-4">
         {/**<TaskCard data={Data[0]}/>
                */}

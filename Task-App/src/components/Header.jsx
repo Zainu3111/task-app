@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div className="flex flex-row h-16 justify-between items-center pl-16 pr-16 bg-gray-300 ">
-      <div className="pl-10 text-center">
+      <div className="pl-10 text-center font-serif text-2xl">
         Task Manager App
       </div>
       <div className="flex flex-row justify-between w-[346px] text-center ">
