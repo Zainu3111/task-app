@@ -13,8 +13,10 @@ app.use(cors())
 
 
 const tasksRouter = require('./routes/task')
+const authRouter = require('./routes/auth')
 
 app.use('/tasks', tasksRouter)
+app.use('/users', authRouter)
 
 app.get('/', (req, res) => {
   res.send('I am here');

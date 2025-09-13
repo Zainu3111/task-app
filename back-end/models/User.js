@@ -30,7 +30,7 @@ UserSchema.pre('save', async function(){
   this.password = await bcrypt.hash(this.password, salt)
 })
 
-UserSchema.methods.getname = function(){
+UserSchema.methods.getName = function(){
   return this.name
 }
 
