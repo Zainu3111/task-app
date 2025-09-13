@@ -1,6 +1,7 @@
 require('dotenv').config();
 /*Modules I am Importing*/ 
 const express = require('express');
+const cors = require('cors')
 
 /*functions I am importing*/
 const connectDB = require('./db/connect');
@@ -8,7 +9,7 @@ const connectDB = require('./db/connect');
 
 const app = express();
 app.use(express.json())
-
+app.use(cors())
 
 
 const tasksRouter = require('./routes/task')

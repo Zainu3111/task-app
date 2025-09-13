@@ -26,7 +26,7 @@ const TaskCard = ({data}) => {
           Task:
         </div>
         <div className="text-center">
-          {data.task}
+          {data.Task}
         </div>
       </div>
       <div className="flex flex-row justify-between text-gray-700 text-[16px] font-medium">
@@ -34,7 +34,7 @@ const TaskCard = ({data}) => {
           Created On:
         </div>
         <div>
-          {data.createdOn}
+          {data['createdAt'].split('T')[0]}
         </div>
       </div>
       <div className={`flex flex-row justify-center ${color} text-[16px] font-medium`}>
