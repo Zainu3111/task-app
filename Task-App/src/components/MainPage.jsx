@@ -5,6 +5,10 @@ import Header from './Header'
 import AddTask from './AddTask'
 
 const MainPage = () => {
+
+
+
+  
   return (
 
     <div className="bg-[rgb(248,247,247)] min-h-screen min-w-1/4">

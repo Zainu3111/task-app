@@ -1,11 +1,33 @@
-const express = require('express')
+require('dotenv').config();
+/*Modules I am Importing*/ 
+const express = require('express');
 
-const app = express()
+/*functions I am importing*/
+const connectDB = require('./db/connect');
+/*-----------------------------------------------*/
 
-app.get('/', () => {
-  console.log('I am here')
-})
+const app = express();
+app.use(express.json())
 
-app.listen(3000, () => {
-  console.log('App is listening on port 3000')
-})
+
+
+const tasksRouter = require('./routes/task')
+
+app.use('/tasks', tasksRouter)
+
+app.get('/', (req, res) => {
+  res.send('I am here');
+});
+
+const start = async () => {
+  try {
+    await connectDB(process.env.MONGO_URI);
+    app.listen(3000, () => {
+      console.log('App is listening on port 3000');
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+start()
