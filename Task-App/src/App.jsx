@@ -1,7 +1,8 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
 
-import MainPage from './components/MainPage'
+import MainPage from './components/MainPage/MainPage'
+import SignUp from './components/SignUp/SignUp';
 
 const App = () => {
   const data = {
@@ -12,7 +13,7 @@ const App = () => {
   return (
     <Routes>
       <Route path='/' element={<MainPage />}/>
-      <Route path='/signup' element={< />}/>
+      <Route path='/signup' element={< SignUp/>}/>
        
     </Routes>
   )
