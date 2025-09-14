@@ -22,6 +22,16 @@ const UserSchema = new mongoose.Schema({
     type:String,
     required:[true, 'Please provide a password'],
     minlength:6
+  },
+  role:{
+    type:String,
+    enum:['Leader', 'Member'],
+    default:'Member'
+  },
+  team:{
+    type: mongoose.Types.ObjectId,
+    ref:'Teams',
+    required:[true, 'Please provide the team you belong to']
   }
 })
 
