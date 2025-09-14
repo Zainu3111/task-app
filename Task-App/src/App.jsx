@@ -2,7 +2,8 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom";
 
 import MainPage from './components/MainPage/MainPage'
-import SignUp from './components/SignUp/SignUp';
+
+import LoginAndSignUpPage from './components/SignUp/LoginAndSignUpPage';
 
 const App = () => {
   const data = {
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <Routes>
       <Route path='/' element={<MainPage />}/>
-      <Route path='/signup' element={< SignUp/>}/>
+      <Route path='/signup' element={< LoginAndSignUpPage/>}/>
        
     </Routes>
   )

@@ -1,24 +1,20 @@
 import React, { useState } from 'react'
 
-const SignUp = () => {
+const LogIn = () => {
   const [showPassword, setShowPassword] = useState(false)
   const [isFocusedEmail, setIsFocusedEmail] = useState(false)
   const [isFocusedPassword, setIsFocusedPassword] = useState(false)
-  const [isFocusedName, setIsFocusedName] = useState(false)
 
   return (
     <div className='flex justify-center items-center'>
       <div className='
-        border-2 rounded-2xl h-[290px] w-[400px]
+        border-2 rounded-2xl h-[240px] w-[400px]
         bg-gradient-to-b from-blue-200 to-white
         text-2xl p-2
         flex flex-col justify-center
       '>
         <div className='flex flex-col items-center'>
           <input className='w-3/4 border-2 rounded bg-amber-50 text-center p-0.5
-            focus:bg-gray-200 focus:border-4
-            ' type="text" placeholder={isFocusedName ? '':'Name'} onFocus={()=>setIsFocusedName(true)} onBlur={() => setIsFocusedName(false)} />
-          <input className='w-3/4 border-2 rounded bg-amber-50 text-center p-0.5 mt-2
             focus:bg-gray-200 focus:border-4
             ' type="text" placeholder={isFocusedEmail ? '':'email'} onFocus={()=>setIsFocusedEmail(true)} onBlur={() => setIsFocusedEmail(false)} />
           <input className='w-3/4 border-2 rounded mt-2 bg-amber-50 text-center p-0.5
@@ -33,11 +29,11 @@ const SignUp = () => {
           <button className='w-1/2 rounded p-1 text-white mt-2 justify-self-end 
            bg-blue-500
             hover:cursor-pointer hover:bg-blue-700 duration-300
-          '>Sign Up</button>
+          '>Log In</button>
         </div>
       </div>
     </div>
   )
 }
 
-export default SignUp
+export default LogIn

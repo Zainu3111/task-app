@@ -31,7 +31,7 @@ const UserSchema = new mongoose.Schema({
   team:{
     type: mongoose.Types.ObjectId,
     ref:'Teams',
-    required:[true, 'Please provide the team you belong to']
+    default:null
   }
 })
 
