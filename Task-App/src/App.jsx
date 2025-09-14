@@ -1,4 +1,5 @@
 import React from 'react'
+import { Routes, Route } from "react-router-dom";
 
 import MainPage from './components/MainPage'
 
@@ -9,9 +10,11 @@ const App = () => {
     status: "Available"
   }
   return (
-    <div className="">
-      <MainPage />
-    </div>
+    <Routes>
+      <Route path='/' element={<MainPage />}/>
+      <Route path='/signup' element={< />}/>
+       
+    </Routes>
   )
 }
 
