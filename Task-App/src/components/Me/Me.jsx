@@ -7,9 +7,12 @@ const Me = () => {
       <div>
         <Header />
       </div>
-      <div className=''>
+      <div className='flex flex-col justify-center items-center'>
+        <div className='h-[272px] w-[456px] border-2 m-5 rounded-2xl bg-blue-300'>
 
+        </div>
       </div>
+
     </div>
   )
 }

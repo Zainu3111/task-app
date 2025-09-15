@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import TaskCard from './TaskCard'
 import Header from './Header'
 import AddTask from './AddTask'
+import Tasks from './Tasks'
 
 const MainPage = () => {
 
@@ -32,16 +33,10 @@ const MainPage = () => {
       <div>
         <Header />
       </div>
+      <div>
         <AddTask/>
-      <div className="flex flex-wrap justify-center mx-[64px] pt-4">
-        {/**<TaskCard data={Data[0]}/>
-               */}
-      { data && data.length ? 
-        data.map((item, index) => <TaskCard key={index} data={item}/>)
-        : null}
-   
+        <Tasks data={data}/>
       </div>
-
 
     </div>
   )
