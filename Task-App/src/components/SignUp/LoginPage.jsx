@@ -9,7 +9,7 @@ const LogIn = () => {
     <div className='flex justify-center items-center'>
       <div className='
         border-2 rounded-2xl h-[240px] w-[400px]
-        bg-gradient-to-b from-blue-200 to-white
+        bg-blue-300
         text-2xl p-2
         flex flex-col justify-center
       '>

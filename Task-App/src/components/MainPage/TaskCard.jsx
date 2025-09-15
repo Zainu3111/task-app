@@ -14,9 +14,9 @@ const TaskCard = ({data}) => {
 
   return (
     <div className="
-    flex flex-col justify-around w-[228px] h-[136px] border rounded-[12px] p-4 bg-gray-300 mx-2 my-1
+    flex flex-col justify-around w-[228px] h-[136px] border rounded-[12px] p-4 bg-blue-300 mx-2 my-1
     [box-shadow:4px_4px_10px_rgba(0,0,0,0.25)]
-    hover:bg-gray-400 hover:[box-shadow:4px_4px_10px_rgba(0,0,0,0.5)] 
+    hover:bg-blue-400 hover:[box-shadow:4px_4px_10px_rgba(0,0,0,0.5)] 
     hover:cursor-default 
     transform hover:scale-105 transition-all duration-400
     " onMouseEnter={() => setHover(true)}

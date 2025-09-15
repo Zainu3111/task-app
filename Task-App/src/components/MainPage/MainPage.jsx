@@ -28,7 +28,7 @@ const MainPage = () => {
 
   return (
 
-    <div className="bg-[rgb(248,247,247)] min-h-screen min-w-1/4">
+    <div className="bg-gradient-to-b from-blue-300 to-white min-h-screen">
       <div>
         <Header />
       </div>
